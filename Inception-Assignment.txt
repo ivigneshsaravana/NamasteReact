@@ -1,11 +1,11 @@
 What is Emmet?
 
-    Emmet is a web development tool and abbreviation engine that allows developers to write HTML and CSS code quickly and efficiently.
-    It was originally known as "Zen Coding".
-    Emmet provides a shorthand syntax for generating HTML and CSS code.
-        For example instead of writing a <div id="unique-link" class="my-link"></div>,
+   		Emmet is a web development tool and abbreviation engine that allows developers to write HTML and CSS code quickly and efficiently.
+    		It was originally known as "Zen Coding".
+   		Emmet provides a shorthand syntax for generating HTML and CSS code.
+        		For example instead of writing a <div id="unique-link" class="my-link"></div>,
 
-        we can write div.my-link#unique-link    // <div id="unique-link" class="my-link"></div>
+        		we can write div.my-link#unique-link    // <div id="unique-link" class="my-link"></div>
 
 
 
@@ -27,26 +27,45 @@ Difference between a Library and Framework?
 
 What is CDN? Why do we use it?
 
-    CDN: Content Delivery Network.
-    CDN is Geographically distributed group of servers that caches content close to end user.
-    CDN allows for a quick transfer of assets needed for loading web content.(HTML pages, JS files, Stylesheets, Images and Videos)
+    		CDN: Content Delivery Network.
+    		CDN is Geographically distributed group of servers that caches content close to end user.
+    		CDN allows for a quick transfer of assets needed for loading web content.(HTML pages, JS files, Stylesheets, Images and Videos)
 
 
 
 Why is React known as React?
 
-    React is JavaScript library.
-    It was developed and is maintained by Facebook.
-    The name "React" comes from the way the library works and its core concept: reacting to changes in data.
-    The central idea behind React is the concept of a "reactive" user interface.
+    		React is JavaScript library.
+    		It was developed and is maintained by Facebook.
+    		The name "React" comes from the way the library works and its core concept: reacting to changes in data.
+    		The central idea behind React is the concept of a "reactive" user interface.
 
 
 
 What is Cross-Origin in the script tag?
 
-    The crossorigin attribute sets the mode of request to HTTP CORS Request.
-    A crossorigin request is a request for a resource from another domain
-    To load scripts from different domain while still maintaining security, you can use the crossorigin attribute in the script tag.
+    		The crossorigin attribute sets the mode of request to HTTP CORS Request.
+    		A crossorigin request is a request for a resource from another domain
+    		To load scripts from different domain while still maintaining security, you can use the crossorigin attribute in the script tag.
 
 
     
+What is difference between React and ReactDOM?
+
+		React:
+		1)React is JavaScript Library used to create User Interface(UI) for Web application.
+		2)It manages components, state, and rendering logic.
+
+		ReactDOM:
+		ReactDOM is a library specifically designed for rendering React components in web applications by handling interactions with the browser's DOM.
+
+
+
+What is the difference between react.development.js and react.production.js files via CDN?
+
+		1)react.development.js is for development and has extra features to help you find and fix issues(Additional warnings and detailed error messages.). It's larger and not optimized for speed.
+		2)react.production.js is for production and is smaller and faster(better performance and reduced file size.).
+
+
+
+What are Async and Defer?
