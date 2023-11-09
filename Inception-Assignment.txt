@@ -1,0 +1,52 @@
+What is Emmet?
+
+    Emmet is a web development tool and abbreviation engine that allows developers to write HTML and CSS code quickly and efficiently.
+    It was originally known as "Zen Coding".
+    Emmet provides a shorthand syntax for generating HTML and CSS code.
+        For example instead of writing a <div id="unique-link" class="my-link"></div>,
+
+        we can write div.my-link#unique-link    // <div id="unique-link" class="my-link"></div>
+
+
+
+Difference between a Library and Framework?
+
+		The Key difference between Library and FrameWork is "Calling Relationship between your code to Library&FrameWork.
+
+		Library:
+			1)In Library , you call the Library code for your usage by your Code.
+			2)Library can be Integrated to an Existing Project to add Functionalities.
+			3)You have more control over how and when you use the library's functions within your code.
+
+		FrameWork:
+			1)In Framework, The Certain Framework code calls your code for its usage.
+			2)When you integrate a framework into your project, you often follow the framework's architecture and design patterns, which may include specific ways to organize 			  your code, manage dependencies, and control the flow of your application.
+			3)The Framework have more control on your code which  leads to issue of Inversion of Control (IOC).
+
+
+
+What is CDN? Why do we use it?
+
+    CDN: Content Delivery Network.
+    CDN is Geographically distributed group of servers that caches content close to end user.
+    CDN allows for a quick transfer of assets needed for loading web content.(HTML pages, JS files, Stylesheets, Images and Videos)
+
+
+
+Why is React known as React?
+
+    React is JavaScript library.
+    It was developed and is maintained by Facebook.
+    The name "React" comes from the way the library works and its core concept: reacting to changes in data.
+    The central idea behind React is the concept of a "reactive" user interface.
+
+
+
+What is Cross-Origin in the script tag?
+
+    The crossorigin attribute sets the mode of request to HTTP CORS Request.
+    A crossorigin request is a request for a resource from another domain
+    To load scripts from different domain while still maintaining security, you can use the crossorigin attribute in the script tag.
+
+
+    
