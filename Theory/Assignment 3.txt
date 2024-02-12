@@ -1,0 +1,37 @@
+1. What is JSX?
+
+	Javascript syntax which is easy to create React element.
+	JSX is a HTML-like syntax or XML-like syntax
+	React is different and JSX is different.
+	JSX is a convention where we kind of merge JavaScript and HTML together.
+	JSX is not HTML inside Javascript.
+
+2. Superpowers of JSX?
+The JSX is easy to maintain and we can embed javascript inside the JSX using expressions ={}.
+It is faster and developer friendly.
+    => const heading = <h1>Heading</h1>
+    => const Container = (
+        <div>
+            <h2>{heading}</h2>
+        </div>
+    )
+
+
+3. Role of type attribute in script? What option can is choose there?
+    => The type attribute normally gives language of script or format of data
+    => It is used to add the type of scripts like React (module)
+    => <script type = "module" src="app.js"></script>
+    => <script type = "text/javascript" src="app.js"></script>
+
+4. {TitleComponent} vs {<TitleComponent />} vs {<TitleComponent></TitleComponent>} in JSX?
+         => {TitleComponent} - This is used to add an javascript variable inside an JSX 
+            const TitleComponent = 45000
+            const Total = () => (
+                {TitleComponent}
+            )
+
+            {<TitleComponent />} => React Functional component.
+            root.render(<TitleComponent />); => This is how you render a React Functional Component.
+
+            {<TitleComponent></TitleComponent>} => Same as the ex above.
+

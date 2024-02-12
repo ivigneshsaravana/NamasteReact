@@ -1,0 +1,173 @@
+What is 'NPM'?
+	NPM stands for everything but not Node package manager.
+	Basically NPM manages packages and it is a standard repository for all packages.
+
+
+
+What is Parcel/Webpack? Why do we need it?
+	Parcel and webpack are both popular bundlers for JavaScript applications.
+	They serve the purpose of bundling, or packaging, various assets and dependencies of a web application into a format that is optimized for deployment.
+
+	We need it for various purposes
+	-Dev Build
+	-Differential Bundling => Support older browsers
+	-HMR => Hot Module Replacement
+	-File watching Algorithm => Written in C++
+	-Tree Shaking => Removes unused code for you
+	-Caching => Faster Build
+	-Minification
+	-Bundling
+	-Compress
+	-Code Splitting
+	-Different Dev and Prod bundles
+	-Local Server
+	-Consistant hashing
+	-Diagnostic
+	-Error handling
+
+===> How to install a package / a dependency in our APP?
+Ans: npm install -D package_name
+     Eg: npm install -D parcel	 
+    
+
+Why '-D'?
+    There are 2 types of packages/ Dependencies that we can install,
+        1) Dev Dependency - For development
+        2) Normal Dependency - For production
+     Where, -D tells the npm that we want a package for development, not for Production
+
+In package.json file, we will be seeing ^ or ~ before version number
+
+	 "^2.8.3" in the package.js tells that if a new version of parcel comes in future,
+     then npm will update it to the latest MINOR version.
+     BUT if you change ^ to ~
+     "~2.8.3" then it will update to the latest MAJOR version.
+     ITS always better to jump to the minor updated versions.
+
+
+What is '.parcel-cache'?
+    The .parcel-cache directory is a directory created by the Parcel bundler to store caching information. 
+    Parcel uses caching as a strategy to speed up the build process by storing intermediate results and dependencies of the project. Instead of reprocessing all the files and dependencies every time you build your project.
+
+===> What is npx ?
+Ans: npx is a package running tool that comes with npm and is used to run / execute the packages from npm.
+     Syntax: npx package_name file_name
+     Eg: npx parcel index.html
+     Running this command line will basically create a server for us at http://localhost:1234
+     which points to our index.html file. Now you access your project using this link
+
+
+===> What is Tree Shaking?
+	Ans: Tree shaking helps to identify and remove the parts of the code that are not actually used in your application, resulting in a smaller bundle size and improved performance.
+
+
+===> What is Hot Module Replacement?
+	Ans: Hot Module Replacement (HMR) is a feature in modern web development tools and frameworks that allows developers to update modules in an application without requiring a full page reload.
+
+
+===> What is .gitignore? What should we add and not add into it?
+
+	Ans: If you want some files not to go for production, Just put it into .gitignore file.
+		 The .gitignore file is used in Git to specify files and directories that should be ignored when tracking changes in a Git repository.
+
+	===>What to add to '.gitignore':
+	1) Node modules 
+		Ex: node_modules/
+
+	2) Build Artifacts 
+		Ex: build/
+			dist/
+*			.log
+
+	3) Environment-Specific files 
+		Ex: .env
+			.env.local
+			.env.*.local
+
+	4) Editor/ IDE files 
+		Ex: .vscode/
+			.idea/
+			*.sublime-project
+			*.sublime-workspace
+
+	5) Temporary Files
+		Ex: *.swp
+			Thumbs.db
+ 
+	6) Compiled Code 
+		Ex: *.class
+			*.jar
+
+	7) Logs and Database Files
+		Ex: *.log
+			*.sql
+			*.sqlite
+
+
+	===>What not to add to '.gitignore':
+		1) Important Configuration Files
+			Ex: !.env.example
+				!config.ini
+
+		2) Version Control Configuration
+			Ex: .git/
+				.gitignore
+
+		3) User-Specific Files
+			Ex: /user-settings.json
+
+		4) Dependency Management Files
+			Ex: package-lock.json
+				yarn.lock
+
+
+
+===> What is the difference between package.json AND package-lock.json?
+Ans: * package.json is the main configuration file for a Node.js project.
+	 * This gets created when we do "npm init"
+     * It contains about the project, such as its name, version, description, author, and license etc..
+	 * It also contains the projects direct dependences with its minimal data such as name and version.
+	 * It is typically maintained by the developer or project manager.
+	 * Developers can manually edit this file to update dependencies or other project-related information.
+     
+     BUT
+	 
+     * package-lock.json file is automatically generated and maintained by npm (or Yarn) when you install or update 
+	   dependencies in your project using commands like npm install or npm update.
+	 * It locks down the versions of each installed package and its dependencies, ensuring that every developer working on the project uses the exact same versions of the packages.
+
+     * It includes a complete dependency tree, including transitive (indirect) dependencies, and their respective versions.
+
+
+===> Why should I not modify package-lock.json?
+	The package-lock.json file is generated by npm (Node Package Manager)
+	It locks down the versions of each installed package and its dependencies, ensuring that every developer working on the project uses the exact same versions of the packages.
+
+	When we give npm install, It installs all the transitive dependencies mentioned in package-lock.json and package.json
+
+
+===> What is node_modules? Is it good idea to push that on git?
+	Ans: Node modules contains all the code that we fetched from npm.
+		 Node modules basically fetches all code of all the dependencies into our system.
+
+	No don't push node modules to git. 
+	If you have package.json and package-lock.json you can re-create all your node_modules.
+
+
+===> What is dist folder?
+	Ans: When it builds a production ready application that build files goes inside dist folder.
+
+
+===> What is browserslist?
+	Ans: browserslist is a configuration file that specifies the list of browsers or environments for which a front-end project intends to support. 
+
+
+===> What is ^ Caret and ~ Tilda ?
+	Ans: In package.json file, we will be seeing ^ or ~ before version number
+
+	 "^2.8.3" in the package.js tells that if a new version of parcel comes in future,
+     then npm will update it to the latest MINOR version.
+     BUT if you change ^ to ~
+     "~2.8.3" then it will update to the latest MAJOR version.
+     ITS always better to jump to the minor updated versions.
+

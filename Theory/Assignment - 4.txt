@@ -1,0 +1,37 @@
+Why we need keys in react? When do we need keys in react?
+
+	We need key prop when we use "Array.map" function.
+
+	Ex:
+	 If there is an arraylist and we dont have key to it. And some new objs are added to it. After that when we render it, The react renders everything because react doesn't which is added recently and at which place its been added.
+
+	In case when we have key prop, If the new objs are added and rendered. React recognizes the recently added objs because of its unique keys and it only renders the recently added object.
+	This way we can reduce time complexity. 
+	
+
+Can we use index as keys in react?
+	React only don't recommend using indexes for keys.
+	If there is no key value from backend, For time being you can use index as a key. But it is not recommended.
+
+What is Props in React?
+	In React, "props" is a shorthand for "properties," and it is a mechanism for passing data from a parent component to a child component.
+
+What is Config driven UI?
+	The user interface (UI) of an application is defined and controlled by a configuration(DATA from API) rather than being hard-coded.
+
+How can I write comments in JSX?
+	In JSX, you can write comments using the curly braces {} to include JavaScript expressions. This allows you to use JavaScript's comment syntax within JSX. 
+
+	Here's an example:	{/* This is a JSX comment */}
+
+What is <React.Fragment> </React.Fragment> OR <> </>?
+	In React, <React.Fragment> (or its shorthand syntax <>...</>) is a way to group multiple elements without adding an extra DOM element. In JSX, you can only return a single parent element from a component's render method. <React.Fragment> provides a way to wrap multiple elements without introducing an additional container element in the DOM.
+
+What is Virtual DOM?
+	It is an abstraction of the actual DOM elements and represents a lightweight, in-memory copy of the real DOM. The Virtual DOM is employed to improve the efficiency of updating the user interface (UI) in response to changes in application state.
+
+What is Reconciliation in React?
+	Reconciliation in React refers to the process of updating the actual Document Object Model (DOM) to match the desired or expected state of the user interface (UI). 
+
+What is React Fibre?
+	React Fiber introduced rendering prioritisation that will optimise the speed of your app. It enables stopping one rendering job in favour of other ones that can be done later. It means that more important components will be rendered in the first sequence, e.g. changes in the lists will give way to animation.
