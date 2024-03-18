@@ -1,0 +1,21 @@
+what would happen if we do console.log(usestate())?
+
+	If you were to do console.log(useState()), it would log the array returned by useState() to the console. This array would contain the current state value and the function to update that state.
+		Here's an example of what console.log(useState()) might log:
+			[initialStateValue, functionToUpdateState]
+
+
+How will useEffect behave if we don't add a dependency array?
+
+	If you don't add a dependency array to the useEffect() hook in React, it means the useEffect will run after every render of the component, including the initial render.
+	
+	
+What is SPA?
+
+	SPA stands for Single Page Application. 
+	It's a web application or website that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from the server.
+	
+What is difference between Client Side Routing and Server Side Routing?
+	
+	In the server-side routing, when we exchange data, we send requests and responses, 
+	and in the client-side case, we are not doing that. We are reading the URL, and we are re-rendering the page.
